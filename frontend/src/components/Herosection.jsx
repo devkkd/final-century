@@ -66,11 +66,11 @@ export default function HeroSection() {
                 </h1>
 
                 <div className="hop-badge">
-                  <img
+                  {/* <img
                     src="/images/home/1.png"
                     alt="Century Overseas Papers"
                     className="hop-badge-image"
-                  />
+                  /> */}
                 </div>
               </div>
 

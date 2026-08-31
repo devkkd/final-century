@@ -18,7 +18,7 @@ export default function HomeBuildingSection() {
 
       <style jsx>{`
         /* =========================================
-           DESKTOP
+           BASE / DESKTOP
         ========================================= */
 
         .hbs-section {
@@ -27,20 +27,57 @@ export default function HomeBuildingSection() {
           padding: 0;
           overflow: hidden;
           box-sizing: border-box;
+
+          /*
+           * Prevent the section from creating unexpected
+           * horizontal overflow during initial render.
+           */
+          position: relative;
+          display: block;
         }
 
         .hbs-image-wrap {
           position: relative;
+
           width: 100%;
           height: 540px;
+
           margin: 0;
           padding: 0;
+
           overflow: hidden;
+          box-sizing: border-box;
+
+          /*
+           * Important for Next/Image fill:
+           * keeps the image anchored to this exact box
+           * from the first render.
+           */
+          display: block;
+
+          /*
+           * Prevent layout changes caused by inline
+           * image rendering/baseline calculations.
+           */
+          line-height: 0;
         }
 
         .hbs-image {
+          /*
+           * Keep original UI.
+           */
           object-fit: cover;
           object-position: center;
+
+          /*
+           * Make image rendering deterministic.
+           */
+          display: block;
+
+          /*
+           * Prevent any inline baseline behaviour.
+           */
+          vertical-align: middle;
         }
 
 
@@ -51,7 +88,13 @@ export default function HomeBuildingSection() {
 
         @media (min-width: 1025px) and (max-width: 1279px) {
           .hbs-image-wrap {
+            width: 100%;
             height: 470px;
+          }
+
+          .hbs-image {
+            object-fit: cover;
+            object-position: center;
           }
         }
 
@@ -63,10 +106,12 @@ export default function HomeBuildingSection() {
 
         @media (min-width: 769px) and (max-width: 1024px) {
           .hbs-image-wrap {
+            width: 100%;
             height: 400px;
           }
 
           .hbs-image {
+            object-fit: cover;
             object-position: center center;
           }
         }
@@ -79,6 +124,7 @@ export default function HomeBuildingSection() {
 
         @media (min-width: 481px) and (max-width: 768px) {
           .hbs-image-wrap {
+            width: 100%;
             height: 330px;
           }
 
@@ -96,6 +142,7 @@ export default function HomeBuildingSection() {
 
         @media (min-width: 361px) and (max-width: 480px) {
           .hbs-image-wrap {
+            width: 100%;
             height: 270px;
           }
 
@@ -113,6 +160,7 @@ export default function HomeBuildingSection() {
 
         @media (max-width: 360px) {
           .hbs-image-wrap {
+            width: 100%;
             height: 235px;
           }
 
