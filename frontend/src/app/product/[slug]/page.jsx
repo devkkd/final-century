@@ -48,7 +48,7 @@ export default async function ProductPage({ params }) {
             <p className="product-desc">{product.desc}</p>
 
             <ul className="meta-list">
-              {product.meta.map((line) => (
+              {(product.meta ?? []).map((line) => (
                 <li key={line}>{line}</li>
               ))}
             </ul>

@@ -202,6 +202,7 @@ export default function HeroSection() {
           margin: 0;
           padding: 0;
           position: relative;
+          overflow: visible;
         }
 
         .hop-hero-inner {
@@ -217,6 +218,8 @@ export default function HeroSection() {
           grid-template-columns: 63% 37%;
           min-height: 610px;
           gap: 0;
+          align-items: start;
+          overflow: visible;
 
           /* IMPORTANT */
           position: static;
@@ -312,24 +315,22 @@ export default function HeroSection() {
         }
 
         .hop-hero-right {
-          position: absolute;
-
-          top: -142px;
-          right: 0;
-
-          width: 37%;
-          height: 692px;
-
+          position: relative;
+          width: 100%;
+          height: 100%;
+          min-height: 610px;
           margin: 0;
           padding: 0;
-
           z-index: 1;
+          /* Pull the column up to overlap behind the header */
+          margin-top: -142px;
         }
 
         .hop-carousel {
           position: relative;
           width: 100%;
-          height: 80%;
+          height: 100%;
+          min-height: 610px;
           margin: 0;
           padding: 0;
           overflow: hidden;

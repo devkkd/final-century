@@ -1036,59 +1036,77 @@ export const categories = [
         heading: "Gifting Products",
 
         products: [
-         {
-      slug: "gifting-bags-01",
-      name: "Gifting Bags",
-      image: "/images/newproducts/45.jpg",
-    },
+          {
+            slug: "gifting-bags-01",
+            name: "Gifting Bags",
+            image: "/images/newproducts/45.jpg",
+            desc: "Handcrafted eco-friendly gifting bags made from recycled and sustainable materials — ideal for retail, corporate gifting, and festive packaging.",
+            meta: ["Material: Recycled Paper / Kraft", "Customisation: Size, Print & Handle", "MOQ: 100 units"],
+          },
 
-    {
-      slug: "gifting-bags-02",
-      name: "Gifting Bags",
-      image: "/images/newproducts/46.jpg",
-    },
+          {
+            slug: "gifting-bags-02",
+            name: "Gifting Bags",
+            image: "/images/newproducts/46.jpg",
+            desc: "Sturdy and stylish gifting bags crafted from sustainable paper. Available in a range of sizes and finishes suitable for any occasion.",
+            meta: ["Material: Recycled Paper / Kraft", "Customisation: Size, Print & Handle", "MOQ: 100 units"],
+          },
 
-    {
-      slug: "gift-boxes-01",
-      name: "Gift Boxes",
-      image: "/images/newproducts/47.jpg",
-    },
+          {
+            slug: "gift-boxes-01",
+            name: "Gift Boxes",
+            image: "/images/newproducts/47.jpg",
+            desc: "Premium eco-conscious gift boxes designed for an elegant unboxing experience. Made from recycled board with customisable printing.",
+            meta: ["Material: Recycled Greyboard / Kraft", "Customisation: Size, Colour & Print", "MOQ: 50 units"],
+          },
 
-    {
-      slug: "gift-boxes-02",
-      name: "Gift Boxes",
-      image: "/images/newproducts/48.jpg",
-    },
+          {
+            slug: "gift-boxes-02",
+            name: "Gift Boxes",
+            image: "/images/newproducts/48.jpg",
+            desc: "Durable and decorative gift boxes crafted from sustainable materials. Perfect for luxury retail, corporate, and festive gifting.",
+            meta: ["Material: Recycled Greyboard / Kraft", "Customisation: Size, Colour & Print", "MOQ: 50 units"],
+          },
 
-    {
-      slug: "gift-boxes-03",
-      name: "Gift Boxes",
-      image: "/images/newproducts/49.jpg",
-    },
+          {
+            slug: "gift-boxes-03",
+            name: "Gift Boxes",
+            image: "/images/newproducts/49.jpg",
+            desc: "Thoughtfully designed gift boxes that combine sustainability with style. Available in multiple formats including rigid and collapsible options.",
+            meta: ["Material: Recycled Greyboard / Kraft", "Customisation: Size, Colour & Print", "MOQ: 50 units"],
+          },
 
-    {
-      slug: "gifting-cards-01",
-      name: "Gifting Cards",
-      image: "/images/newproducts/50.jpg",
-    },
+          {
+            slug: "gifting-cards-01",
+            name: "Gifting Cards",
+            image: "/images/newproducts/50.jpg",
+            desc: "Beautifully printed gifting cards made from recycled and seed paper. A sustainable and memorable way to personalise any gift.",
+            meta: ["Material: Recycled / Seed Paper", "Customisation: Size, Design & Message", "MOQ: 200 units"],
+          },
 
-    {
-      slug: "gifting-cards-02",
-      name: "Gifting Cards",
-      image: "/images/newproducts/51.jpg",
-    },
+          {
+            slug: "gifting-cards-02",
+            name: "Gifting Cards",
+            image: "/images/newproducts/51.jpg",
+            desc: "Artisan gifting cards crafted from eco-friendly paper. Can be printed with bespoke designs for brand identity or personal occasions.",
+            meta: ["Material: Recycled / Seed Paper", "Customisation: Size, Design & Message", "MOQ: 200 units"],
+          },
 
-    {
-      slug: "gifting-cards-03",
-      name: "Gifting Cards",
-      image: "/images/newproducts/52.jpg",
-    },
+          {
+            slug: "gifting-cards-03",
+            name: "Gifting Cards",
+            image: "/images/newproducts/52.jpg",
+            desc: "Sustainably sourced gifting cards with a premium feel. Available in plantable seed paper variants that grow into wildflowers after use.",
+            meta: ["Material: Recycled / Seed Paper", "Customisation: Size, Design & Message", "MOQ: 200 units"],
+          },
 
-    {
-      slug: "gifting-cards-04",
-      name: "Gifting Cards",
-      image: "/images/newproducts/53.jpg",
-    },
+          {
+            slug: "gifting-cards-04",
+            name: "Gifting Cards",
+            image: "/images/newproducts/53.jpg",
+            desc: "Elegant gifting cards made from certified recycled or seed paper. Ideal for retail, corporate, and festive gifting with full custom print options.",
+            meta: ["Material: Recycled / Seed Paper", "Customisation: Size, Design & Message", "MOQ: 200 units"],
+          },
         ],
       },
     ],
