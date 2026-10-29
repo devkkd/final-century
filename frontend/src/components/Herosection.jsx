@@ -240,6 +240,7 @@ export default function HeroSection() {
         .hop-heading {
           font-family: "Playfair Display", serif;
           font-weight: 700;
+          font-size: 36px;
           font-size: clamp(26px, 2.5vw, 46px);
           line-height: 1.35;
           color: #004342;

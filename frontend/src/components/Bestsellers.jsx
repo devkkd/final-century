@@ -184,6 +184,8 @@ export default function BestSellers() {
           position: relative;
           border-radius:18px;
           width: 100%;
+          /* aspect-ratio fallback for iOS < 15 */
+          height: 280px;
           aspect-ratio: 1 / 1.02;
           overflow: hidden;
           margin-bottom: 18px;
@@ -230,7 +232,7 @@ export default function BestSellers() {
 
         .bs-card-btn {
           align-self: flex-start;
-          font-family: "Mona Sans", sans-serif;
+          font-family: "Mona Sans", -apple-system, BlinkMacSystemFont, sans-serif;
           background: #ffffff;
           color: #004342;
           border: 1.5px solid #004342;
@@ -239,7 +241,9 @@ export default function BestSellers() {
           font-size: 13px;
           font-weight: 500;
           cursor: pointer;
+          display: -webkit-inline-flex;
           display: inline-flex;
+          -webkit-align-items: center;
           align-items: center;
           gap: 6px;
           transition: background-color 0.25s ease, color 0.25s ease,

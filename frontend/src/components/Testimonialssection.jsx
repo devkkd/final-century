@@ -186,8 +186,7 @@ export default function TestimonialsSection() {
       </div>
 
      <style jsx global>{`
-  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,500;1,600&display=swap");
-  @import url("https://api.fontshare.com/v2/css?f[]=mona-sans@400,500,600,700&display=swap");
+  /* Google/Fontshare fonts are loaded via <link> in layout.js <head> */
 `}</style>
 
       <style jsx>{`
@@ -230,6 +229,7 @@ export default function TestimonialsSection() {
   margin: 0;
   font-family: "Playfair Display", serif;
   font-weight: 600;
+  font-size: 30px;
   font-size: clamp(26px, 2.4vw, 34px);
   line-height: 1.15;
   letter-spacing: -0.8px;

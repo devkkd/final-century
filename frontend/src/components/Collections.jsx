@@ -209,6 +209,8 @@ export default function Collections() {
 
        .col-card-img-wrap {
   width: 100%;
+  /* aspect-ratio fallback for iOS < 15 */
+  height: 220px;
   aspect-ratio: 2 / 1.5;
   overflow: hidden;
   margin-bottom: 20px;
@@ -244,7 +246,7 @@ export default function Collections() {
 
         .col-card-btn {
           align-self: flex-start;
-          font-family: "Mona Sans", sans-serif;
+          font-family: "Mona Sans", -apple-system, BlinkMacSystemFont, sans-serif;
           background: #004342;
           color: #ffffff;
           border: none;
@@ -253,9 +255,12 @@ export default function Collections() {
           font-size: 13px;
           font-weight: 500;
           cursor: pointer;
+          display: -webkit-inline-flex;
           display: inline-flex;
+          -webkit-align-items: center;
           align-items: center;
           gap: 6px;
+          -webkit-gap: 6px;
         }
 
       /* =========================================================
@@ -344,6 +349,8 @@ export default function Collections() {
 
   .col-card-img-wrap {
     width: 100%;
+    /* aspect-ratio fallback for iOS < 15 */
+    height: 180px;
     aspect-ratio: 4 / 3;
 
     margin-bottom: 16px;
@@ -562,6 +569,7 @@ export default function Collections() {
   .col-card-img-wrap {
     width: 100%;
 
+    height: 140px;
     aspect-ratio: 4 / 3;
 
     margin: 0 0 12px;
@@ -821,6 +829,7 @@ export default function Collections() {
   .col-card-img-wrap {
     width: 100%;
 
+    height: 120px;
     aspect-ratio: 1 / 0.82;
 
     margin: 0 0 10px;
@@ -1014,6 +1023,7 @@ export default function Collections() {
   .col-card-img-wrap {
     width: 100%;
 
+    height: 110px;
     aspect-ratio: 1 / 0.82;
 
     margin-bottom: 9px;

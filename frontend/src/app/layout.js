@@ -13,9 +13,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preconnect for Google Fonts — improves load time on all devices */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Playfair Display — loaded via <link> not @import so it works in iOS Private Browsing */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,500;1,600&display=swap"
+        />
+      </head>
       <body className="relative min-h-screen">
-        {/* Loader is the very first thing in <body> — rendered on the server,
-            visible from byte-one, hides behind itself until window.load fires */}
+        {/* Loader is first in <body> — SSR rendered, visible before any JS */}
         <PageLoader />
 
         <Header />

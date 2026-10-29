@@ -11,8 +11,8 @@
   --color-foreground: var(--foreground);
 
   /* Fonts */
-  --font-sans: "MonaSans", sans-serif;     /* default */
-  --font-playfair: "Playfair", serif;      /* custom */
+  --font-sans: "MonaSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-playfair: "Playfair", Georgia, "Times New Roman", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,14 +39,46 @@
   font-display: swap;
 }
 
-/* Global styles */
+/* Global reset for iOS Safari consistency */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /* Prevent iOS font size inflation on orientation change */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
 
+  /* Crisp text rendering on Safari/macOS/iOS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   background-image: url("/images/banner/BG.svg");
   background-size: 75% auto;
   background-position: center top;
   background-repeat: repeat;
+}
+
+/* Fix iOS Safari native form element styling */
+input,
+textarea,
+select,
+button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Fix iOS Safari image rendering */
+img {
+  max-width: 100%;
+  display: block;
 }

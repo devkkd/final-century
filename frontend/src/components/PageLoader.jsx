@@ -7,15 +7,25 @@ export default function PageLoader() {
   const css = `
     #pl-overlay {
       position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      /* inset: 0 — not supported Safari < 14.1, explicit fallback above */
       inset: 0;
       z-index: 99999;
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-direction: column;
       flex-direction: column;
+      -webkit-align-items: center;
       align-items: center;
+      -webkit-justify-content: center;
       justify-content: center;
       gap: 32px;
       background: #ffffff;
       opacity: 1;
+      -webkit-transition: opacity 0.5s ease;
       transition: opacity 0.5s ease;
       overflow: hidden;
       pointer-events: all;
